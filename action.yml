@@ -1,12 +1,12 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Sonar Scan Task'
+description: 'Github Actions for running Sonar Scan.'
+author: 'Linjith'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  includePattern:
+    description: 'Scan Include Pattern'
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.includePattern }}
