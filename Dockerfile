@@ -1,7 +1,3 @@
-FROM alpine:3.10
+FROM linjith/sonar-scan-task:latest
 
-COPY LICENSE README.md /
-
-COPY entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/launch.sh"]
