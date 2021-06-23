@@ -1,3 +1,3 @@
-FROM linjith/sonar-scan-task:v3
+FROM linjith/sonar-scan-task:latest
 
 ENTRYPOINT ["/launch.sh"]
