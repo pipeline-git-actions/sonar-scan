@@ -1,5 +1,5 @@
 FROM linjith/sonar-scan-task:latest
 
-COPY entrypoint.sh /launch.sh
+COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
