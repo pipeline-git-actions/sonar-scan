@@ -1,7 +1,7 @@
 FROM linjith/sonar-scan-task:latest
 
-COPY ./entrypoint.sh ./
+COPY entrypoint.sh /launch.sh
 
 RUN chmod 777 entrypoint.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
