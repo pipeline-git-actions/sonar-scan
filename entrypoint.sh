@@ -1,1 +1,2 @@
-echo "hello..."
+#!/bin/sh -l
+echo "test"
